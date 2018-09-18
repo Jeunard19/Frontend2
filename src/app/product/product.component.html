@@ -1,0 +1,26 @@
+<table>
+
+  <tr>
+    <td> Insert product name: </td>
+      <input type="text" name="name" [(ngModel)]="productName" />
+      </tr>
+    
+      <tr>
+          <td> Insert product category: </td>
+            <input type="text" name="category"[(ngModel)]="productCategory"  />
+      </tr>
+          
+       <tr>
+           <td> Insert price paid: </td>
+           <input type="Number" name="price" [(ngModel)]="pricePaid"  />
+       </tr>
+
+
+       <tr>
+           <td> Insert winst margin wanted: </td>
+           <input type="Number" name ="profitmargin" [(ngModel)]="winstMargin" />
+            <button (click) = "click()"> confirm all </button>
+                        
+       </tr>
+
+  </table>
