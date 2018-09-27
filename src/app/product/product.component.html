@@ -1,26 +1,45 @@
-<table>
+<table class="box" table id="Tabel1" >
+    
+  
+    
 
   <tr>
-    <td> Insert product name: </td>
-      <input type="text" name="name" [(ngModel)]="productName" />
-      </tr>
-    
+    <td> Insert product name:  <input type="text" name="name" [(ngModel)]="productName" /> </td>     
+      </tr> 
+      <p></p>
+      <p></p>    
       <tr>
-          <td> Insert product category: </td>
-            <input type="text" name="category"[(ngModel)]="productCategory"  />
+          <td> Insert product category: <input type="text" name="category"[(ngModel)]="productCategory"  /> </td>            
       </tr>
-          
+      <p></p>
+      <p></p>          
        <tr>
-           <td> Insert price paid: </td>
-           <input type="Number" name="price" [(ngModel)]="pricePaid"  />
+           <td> Insert price paid: <input type="Number" name="price" [(ngModel)]="pricePaid"  /> </td>           
+       </tr>
+       <p></p>
+       <p></p>  
+       <tr>
+           <td> Insert profit margin wanted: <input type="Number" name ="profitmargin" [(ngModel)]="winstMargin" /> </td>           
+                     
        </tr>
 
+       <td> Insert username: <input type="text" name ="username" [(ngModel)]="userName" /> </td>  
 
-       <tr>
-           <td> Insert winst margin wanted: </td>
-           <input type="Number" name ="profitmargin" [(ngModel)]="winstMargin" />
-            <button (click) = "click()"> confirm all </button>
-                        
-       </tr>
+       
+       <p></p>
+       <p></p> 
+       <button (click) = "click()"> confirm all </button>
+       
 
   </table>
+
+
+
+
+
+ 
+
+
+
+ 
+  

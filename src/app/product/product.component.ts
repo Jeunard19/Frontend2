@@ -3,6 +3,7 @@ import { ProductDto } from '../../model/product-dto';
 import { FormsModule } from '@angular/forms';
 import { ProductService } from '../service/product.service';
 import { Product } from '../../model/product';
+import { User } from '../../model/user';
 
 
 
@@ -19,6 +20,9 @@ export class ProductComponent implements OnInit {
   productCategory:string
   pricePaid:number
   winstMargin:number
+  userName:String 
+ 
+
 
   dto = new Product(); 
 
@@ -29,17 +33,25 @@ export class ProductComponent implements OnInit {
 
   click(){
 
+
+
     alert(this.productName)
     alert(this.productCategory)
     alert(this.pricePaid)
     alert(this.winstMargin)
+   // alert(this.user)
   
-    
-   this.service.create(this.productName,this.productCategory, this.pricePaid,this.winstMargin).subscribe(data=>{
+  //this.user.id =1; 
+  var user = new User(); 
+  user.id = 1; 
+  user.username = this.userName; 
+
+   this.service.create(this.productName,this.productCategory, this.pricePaid,this.winstMargin, user).subscribe(data=>{
      
    })
 
 
   }
+
 
 }
