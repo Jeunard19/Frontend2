@@ -20,6 +20,7 @@ export class ProductComponent implements OnInit {
   productCategory:string
   pricePaid:number
   winstMargin:number
+  userId:number 
   userName:String 
  
 
@@ -43,7 +44,7 @@ export class ProductComponent implements OnInit {
   
   //this.user.id =1; 
   var user = new User(); 
-  user.id = 1; 
+  user.id = this.userId; 
   user.username = this.userName; 
 
    this.service.create(this.productName,this.productCategory, this.pricePaid,this.winstMargin, user).subscribe(data=>{
